@@ -3126,6 +3126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   anim: {fileID: 1644236951}
+  mainCam: {fileID: 519420031}
 --- !u!212 &1644236950
 SpriteRenderer:
   m_ObjectHideFlags: 0
