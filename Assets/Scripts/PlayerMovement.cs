@@ -23,20 +23,5 @@ public class PlayerMovement : MonoBehaviour
         Vector2 position = (Vector2)transform.position + movement * speed * Time.deltaTime;
         anim.SetFloat("Speed", movement.magnitude);
         transform.position = position;
-
-
-        // Actions 
-        if (Input.GetMouseButtonDown(0)) {
-            Vector3 mousePosition = Input.mousePosition;
-            Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-            if (transform.position.y > mouseWorldPosition.y)
-            {
-                anim.SetTrigger("PlowToward");
-            }
-            else {
-                anim.SetTrigger("PlowAway");
-            }
-        }
     }
 }
