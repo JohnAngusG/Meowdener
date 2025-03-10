@@ -3547,7 +3547,7 @@ PrefabInstance:
     - target: {fileID: 5859805988775058086, guid: 2ec08999e0d178b468c004970fb6420e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2626216719061117901, guid: 8ccaa1256b22109459112152fe8dcc0b, type: 3}
+      objectReference: {fileID: 5827638716017627413, guid: 885655fa8397dd6449a6746e756d4e7a, type: 3}
     - target: {fileID: 9015820226114779195, guid: 2ec08999e0d178b468c004970fb6420e, type: 3}
       propertyPath: m_Name
       value: Hoe
@@ -3622,7 +3622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9148873832462306368, guid: 2ec08999e0d178b468c004970fb6420e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12.3
+      value: 11.7
       objectReference: {fileID: 0}
     - target: {fileID: 9148873832462306368, guid: 2ec08999e0d178b468c004970fb6420e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3730,9 +3730,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5859805988775058086, guid: 2ec08999e0d178b468c004970fb6420e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6987332668960274312, guid: 885655fa8397dd6449a6746e756d4e7a, type: 3}
     - target: {fileID: 9015820226114779195, guid: 2ec08999e0d178b468c004970fb6420e, type: 3}
       propertyPath: m_Name
-      value: WateringCan
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 9148873832462306368, guid: 2ec08999e0d178b468c004970fb6420e, type: 3}
       propertyPath: m_Pivot.x
@@ -3796,7 +3800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9148873832462306368, guid: 2ec08999e0d178b468c004970fb6420e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -136.7
+      value: -136.9
       objectReference: {fileID: 0}
     - target: {fileID: 9148873832462306368, guid: 2ec08999e0d178b468c004970fb6420e, type: 3}
       propertyPath: m_AnchoredPosition.y
