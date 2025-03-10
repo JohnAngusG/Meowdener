@@ -18,33 +18,30 @@ public class InventoryManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Hoe")) {
             player.SetActiveAction(PlayerActions.Action.Hoe);
-            foreach (var panel in inventoryHighlight) {
-                if (panel.transform.name == "Hoe")
-                {
-                    panel.GetChild(0).gameObject.SetActive(true);
-                }
-                else {
-                    panel.GetChild(0).gameObject.SetActive(false);
-                }
-            }
+            SetHighlighting("Hoe");
         }
 
         if (Input.GetButtonDown("Water"))
         {
             player.SetActiveAction(PlayerActions.Action.Water);
-            foreach (var panel in inventoryHighlight)
-            {
-                if (panel.transform.name == "Water")
-                {
-                    panel.GetChild(0).gameObject.SetActive(true);
-                }
-                else
-                {
-                    panel.GetChild(0).gameObject.SetActive(false);
-                }
-            }
+            SetHighlighting("Water");
         }
 
+
+    }
+
+    private void SetHighlighting(String actionName) {
+        foreach (var panel in inventoryHighlight)
+        {
+            if (panel.transform.name == actionName)
+            {
+                panel.GetChild(0).gameObject.SetActive(true);
+            }
+            else
+            {
+                panel.GetChild(0).gameObject.SetActive(false);
+            }
+        }
 
     }
 
