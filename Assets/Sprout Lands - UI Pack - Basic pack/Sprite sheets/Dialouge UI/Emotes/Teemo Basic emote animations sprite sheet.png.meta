@@ -1,115 +1,103 @@
 fileFormatVersion: 2
-guid: 8ccaa1256b22109459112152fe8dcc0b
+guid: f73c318d04b2d194097749df0048b7fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2860006914309871096
-    second: Tools_0
+      213: 3170606959719978654
+    second: Teemo Basic emote animations sprite sheet_0
   - first:
-      213: -2376758258213490438
-    second: Tools_1
+      213: -5118499719815636493
+    second: Teemo Basic emote animations sprite sheet_1
   - first:
-      213: 6232742816020895870
-    second: Tools_2
+      213: -3392124256311189724
+    second: Teemo Basic emote animations sprite sheet_2
   - first:
-      213: -3569232777630780389
-    second: Tools_3
+      213: -6137072926992187901
+    second: Teemo Basic emote animations sprite sheet_3
   - first:
-      213: 3379066624450153177
-    second: Tools_4
+      213: -878309487642997695
+    second: Teemo Basic emote animations sprite sheet_4
   - first:
-      213: 1666225654822289539
-    second: Tools_5
+      213: -1981452080589797694
+    second: Teemo Basic emote animations sprite sheet_5
   - first:
-      213: -855942343913074080
-    second: Tools_6
+      213: 3084663517233384852
+    second: Teemo Basic emote animations sprite sheet_6
   - first:
-      213: 4858919519181452133
-    second: Tools_7
+      213: 1529663306475219331
+    second: Teemo Basic emote animations sprite sheet_7
   - first:
-      213: -2318285518543234687
-    second: Tools_8
+      213: -2689977541891597082
+    second: Teemo Basic emote animations sprite sheet_8
   - first:
-      213: 6451205499376113164
-    second: Tools_9
+      213: 5740606894098697542
+    second: Teemo Basic emote animations sprite sheet_9
   - first:
-      213: -9191924470218883087
-    second: Tools_10
+      213: 7969871509471766104
+    second: Teemo Basic emote animations sprite sheet_10
   - first:
-      213: -7669099814004915387
-    second: Tools_11
+      213: -5837144889636884575
+    second: Teemo Basic emote animations sprite sheet_11
   - first:
-      213: -8188083361976690054
-    second: Tools_12
+      213: 4092809068304666613
+    second: Teemo Basic emote animations sprite sheet_12
   - first:
-      213: -1057921988299516155
-    second: Tools_13
+      213: 7400830825013173422
+    second: Teemo Basic emote animations sprite sheet_13
   - first:
-      213: 1609462941788001184
-    second: Tools_14
+      213: -5575208082441269524
+    second: Teemo Basic emote animations sprite sheet_14
   - first:
-      213: 1599664627685864503
-    second: Tools_15
+      213: -8120029437387109665
+    second: Teemo Basic emote animations sprite sheet_15
   - first:
-      213: 8485792352828908058
-    second: Tools_16
+      213: -1800681657418604919
+    second: Teemo Basic emote animations sprite sheet_16
   - first:
-      213: 5364584501320811629
-    second: Tools_17
+      213: 7600183044305392093
+    second: Teemo Basic emote animations sprite sheet_17
   - first:
-      213: 8572495075955807124
-    second: Tools_18
+      213: -8669422879547106764
+    second: Teemo Basic emote animations sprite sheet_18
   - first:
-      213: 3619422796940490707
-    second: Tools_19
+      213: 2910775002110884874
+    second: Teemo Basic emote animations sprite sheet_19
   - first:
-      213: -1331832645278915656
-    second: Tools_20
+      213: -3060117712892785779
+    second: Teemo Basic emote animations sprite sheet_20
   - first:
-      213: 1353652330683380476
-    second: Tools_21
+      213: 5174787045528027909
+    second: Teemo Basic emote animations sprite sheet_21
   - first:
-      213: 8960991056587126843
-    second: Tools_22
+      213: -6183007600839754392
+    second: Teemo Basic emote animations sprite sheet_22
   - first:
-      213: 8926378314620359478
-    second: Tools_23
+      213: -7923546789675949012
+    second: Teemo Basic emote animations sprite sheet_23
   - first:
-      213: 4221176393231436293
-    second: Tools_24
+      213: -7277245471934812530
+    second: Teemo Basic emote animations sprite sheet_24
   - first:
-      213: 5435728071260527350
-    second: Tools_25
+      213: 7293086388673856576
+    second: Teemo Basic emote animations sprite sheet_25
   - first:
-      213: -814420414084075700
-    second: Tools_26
+      213: -280789893862498932
+    second: Teemo Basic emote animations sprite sheet_26
   - first:
-      213: 2626216719061117901
-    second: Tools_27
+      213: -8191090600096703253
+    second: Teemo Basic emote animations sprite sheet_27
   - first:
-      213: -6106929760706077124
-    second: Tools_28
+      213: 1032392800592126068
+    second: Teemo Basic emote animations sprite sheet_28
   - first:
-      213: 9032762068827564370
-    second: Tools_29
+      213: -4567771349213767063
+    second: Teemo Basic emote animations sprite sheet_29
   - first:
-      213: -6585301689177501549
-    second: Tools_30
+      213: 8458163004304897196
+    second: Teemo Basic emote animations sprite sheet_30
   - first:
-      213: 2838385632842854833
-    second: Tools_31
-  - first:
-      213: -5921496266376460138
-    second: Tools_32
-  - first:
-      213: 4457135352212097113
-    second: Tools_33
-  - first:
-      213: -3030783072273608809
-    second: Tools_34
-  - first:
-      213: 3363151306915190108
-    second: Tools_35
+      213: 5515975032231718096
+    second: Teemo Basic emote animations sprite sheet_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,7 +130,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -218,13 +206,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tools_0
+      name: Teemo Basic emote animations sprite sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 82
-        width: 15
-        height: 10
+        x: 4
+        y: 447
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f5d996b229c0b720800000000000000
-      internalID: 2860006914309871096
+      spriteID: e969d743b32400c20800000000000000
+      internalID: 3170606959719978654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tools_1
+      name: Teemo Basic emote animations sprite sheet_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 82
-        width: 15
-        height: 12
+        x: 4
+        y: 415
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af0753ee4fe040fd0800000000000000
-      internalID: -2376758258213490438
+      spriteID: 3f9d371bf9f67f8b0800000000000000
+      internalID: -5118499719815636493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tools_2
+      name: Teemo Basic emote animations sprite sheet_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 81
-        width: 9
-        height: 11
+        x: 36
+        y: 415
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e781b4591962f7650800000000000000
-      internalID: 6232742816020895870
+      spriteID: 42fd59c06f0cce0d0800000000000000
+      internalID: -3392124256311189724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tools_3
+      name: Teemo Basic emote animations sprite sheet_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 83
-        width: 9
-        height: 12
+        x: 4
+        y: 383
+        width: 27
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b14f2a803b9877ec0800000000000000
-      internalID: -3569232777630780389
+      spriteID: 30eb6f140bcb4daa0800000000000000
+      internalID: -6137072926992187901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tools_4
+      name: Teemo Basic emote animations sprite sheet_4
       rect:
         serializedVersion: 2
-        x: 67
-        y: 80
-        width: 9
-        height: 12
+        x: 4
+        y: 351
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,20 +309,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9dacabe113bd4ee20800000000000000
-      internalID: 3379066624450153177
+      spriteID: 14c0f2aac2e9fc3f0800000000000000
+      internalID: -878309487642997695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tools_5
+      name: Teemo Basic emote animations sprite sheet_5
       rect:
         serializedVersion: 2
-        x: 83
-        y: 83
-        width: 9
-        height: 12
+        x: 36
+        y: 383
+        width: 27
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,20 +331,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 380435fa76f9f1710800000000000000
-      internalID: 1666225654822289539
+      spriteID: 2c68cf4b4d77084e0800000000000000
+      internalID: -1981452080589797694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tools_6
+      name: Teemo Basic emote animations sprite sheet_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 66
-        width: 17
-        height: 10
+        x: 36
+        y: 351
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,482 +353,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 06298d229f41f14f0800000000000000
-      internalID: -855942343913074080
+      spriteID: 49d8d4c202deeca20800000000000000
+      internalID: 3084663517233384852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tools_7
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 66
-        width: 17
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 563b50d1f895e6340800000000000000
-      internalID: 4858919519181452133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_8
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 65
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1895c4b8a9bc3dfd0800000000000000
-      internalID: -2318285518543234687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_9
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 67
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c061c53c839478950800000000000000
-      internalID: 6451205499376113164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_10
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 64
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fff16e2569bf6080800000000000000
-      internalID: -9191924470218883087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_11
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 67
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 543093f0a52e19590800000000000000
-      internalID: -7669099814004915387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 47
-        width: 12
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a7ad71a80951e5e80800000000000000
-      internalID: -8188083361976690054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_13
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 52
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50715578e818151f0800000000000000
-      internalID: -1057921988299516155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_14
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 52
-        width: 7
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a3dd6ca406f55610800000000000000
-      internalID: 1609462941788001184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_15
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 47
-        width: 13
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 73439f4e086233610800000000000000
-      internalID: 1599664627685864503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_16
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 52
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a12e71c6f2793c570800000000000000
-      internalID: 8485792352828908058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_17
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 52
-        width: 7
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d640bc06e25d27a40800000000000000
-      internalID: 5364584501320811629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 31
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49391214ade97f670800000000000000
-      internalID: 8572495075955807124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_19
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 35
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d7b6977bd5ca3230800000000000000
-      internalID: 3619422796940490707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_20
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 35
-        width: 8
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8b3a1e5f341648de0800000000000000
-      internalID: -1331832645278915656
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_21
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 31
-        width: 14
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf233cf6f9329c210800000000000000
-      internalID: 1353652330683380476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_22
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 35
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b38f35b73e5db5c70800000000000000
-      internalID: 8960991056587126843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_23
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 35
-        width: 8
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63352bd78cdd0eb70800000000000000
-      internalID: 8926378314620359478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_24
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 15
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50a03dc9091a49a30800000000000000
-      internalID: 4221176393231436293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_25
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 22
-        width: 11
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fa5a1f81e59f6b40800000000000000
-      internalID: 5435728071260527350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_26
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 22
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4f21b8c2f892b4f0800000000000000
-      internalID: -814420414084075700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_27
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 15
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dcb64d21132327420800000000000000
-      internalID: 2626216719061117901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_28
+      name: Teemo Basic emote animations sprite sheet_7
       rect:
         serializedVersion: 2
         x: 68
-        y: 22
-        width: 11
-        height: 8
+        y: 383
+        width: 27
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -849,20 +375,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3e5ad01db3df3ba0800000000000000
-      internalID: -6106929760706077124
+      spriteID: 389a7683ca47a3510800000000000000
+      internalID: 1529663306475219331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tools_29
+      name: Teemo Basic emote animations sprite sheet_8
       rect:
         serializedVersion: 2
-        x: 79
-        y: 22
-        width: 8
-        height: 11
+        x: 68
+        y: 351
+        width: 25
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -871,20 +397,504 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 259e6157e31da5d70800000000000000
-      internalID: 9032762068827564370
+      spriteID: 6ecd5c18da74baad0800000000000000
+      internalID: -2689977541891597082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tools_30
+      name: Teemo Basic emote animations sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 383
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d49ed1e8bbaaf40800000000000000
+      internalID: 5740606894098697542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 351
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856229369ebaa9e60800000000000000
+      internalID: 7969871509471766104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 383
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afe4be36ab4efea0800000000000000
+      internalID: -5837144889636884575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 319
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff0cc9b9249cc830800000000000000
+      internalID: 4092809068304666613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 287
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacdbaf8c6805b660800000000000000
+      internalID: 7400830825013173422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 319
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee8339a9c1e0a2b0800000000000000
+      internalID: -5575208082441269524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 287
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda83da9f3cdf4f80800000000000000
+      internalID: -8120029437387109665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_16
       rect:
         serializedVersion: 2
         x: 2
+        y: 255
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e9000b291b207e0800000000000000
+      internalID: -1800681657418604919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 223
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd115c71636497960800000000000000
+      internalID: 7600183044305392093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 255
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a53f8d2d500b780800000000000000
+      internalID: -8669422879547106764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 223
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0cf7e54176256820800000000000000
+      internalID: 2910775002110884874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 191
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b052047274885d0800000000000000
+      internalID: -3060117712892785779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 159
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503cdf4966980d740800000000000000
+      internalID: 5174787045528027909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 191
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86df764985b813aa0800000000000000
+      internalID: -6183007600839754392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 159
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24ad20fc28e90290800000000000000
+      internalID: -7923546789675949012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 127
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e610ebcc7020b90800000000000000
+      internalID: -7277245471934812530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04444291e6f363560800000000000000
+      internalID: 7293086388673856576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 127
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d5ec7441f6a1cf0800000000000000
+      internalID: -280789893862498932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 95
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: becd13a5f76635e80800000000000000
+      internalID: -8191090600096703253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470e6f348cbc35e00800000000000000
+      internalID: 1032392800592126068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 63
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a18e2b8240c90c0800000000000000
+      internalID: -4567771349213767063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca4b1fb607e616570800000000000000
+      internalID: 8458163004304897196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 5
         y: 0
-        width: 11
-        height: 6
+        width: 26
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -893,118 +903,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3909bcd010f4c94a0800000000000000
-      internalID: -6585301689177501549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_31
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 4
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b1bb25d1b8f36720800000000000000
-      internalID: 2838385632842854833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_32
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 5
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69844d7e48e92dda0800000000000000
-      internalID: -5921496266376460138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_33
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 0
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9580078ecfceadd30800000000000000
-      internalID: 4457135352212097113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_34
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 4
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79f4dd18ade70f5d0800000000000000
-      internalID: -3030783072273608809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tools_35
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 5
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c55129e7b405cae20800000000000000
-      internalID: 3363151306915190108
+      spriteID: 0dc6812211eac8c40800000000000000
+      internalID: 5515975032231718096
       vertices: []
       indices: 
       edges: []
@@ -1022,43 +922,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Tools_0: 2860006914309871096
-      Tools_1: -2376758258213490438
-      Tools_10: -9191924470218883087
-      Tools_11: -7669099814004915387
-      Tools_12: -8188083361976690054
-      Tools_13: -1057921988299516155
-      Tools_14: 1609462941788001184
-      Tools_15: 1599664627685864503
-      Tools_16: 8485792352828908058
-      Tools_17: 5364584501320811629
-      Tools_18: 8572495075955807124
-      Tools_19: 3619422796940490707
-      Tools_2: 6232742816020895870
-      Tools_20: -1331832645278915656
-      Tools_21: 1353652330683380476
-      Tools_22: 8960991056587126843
-      Tools_23: 8926378314620359478
-      Tools_24: 4221176393231436293
-      Tools_25: 5435728071260527350
-      Tools_26: -814420414084075700
-      Tools_27: 2626216719061117901
-      Tools_28: -6106929760706077124
-      Tools_29: 9032762068827564370
-      Tools_3: -3569232777630780389
-      Tools_30: -6585301689177501549
-      Tools_31: 2838385632842854833
-      Tools_32: -5921496266376460138
-      Tools_33: 4457135352212097113
-      Tools_34: -3030783072273608809
-      Tools_35: 3363151306915190108
-      Tools_4: 3379066624450153177
-      Tools_5: 1666225654822289539
-      Tools_6: -855942343913074080
-      Tools_7: 4858919519181452133
-      Tools_8: -2318285518543234687
-      Tools_9: 6451205499376113164
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

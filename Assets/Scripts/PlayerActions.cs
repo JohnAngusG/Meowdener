@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PlayerActions : MonoBehaviour
 {
-
     [SerializeField] private Animator anim;
     public enum Action {Reap, Hoe, Water };
     public Action activeAction;
@@ -10,10 +9,6 @@ public class PlayerActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Hoe")) { 
-            activeAction = Action.Hoe;
-        }
-
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePosition = Input.mousePosition;
@@ -33,5 +28,9 @@ public class PlayerActions : MonoBehaviour
             }
             
         }
+    }
+    public void SetActiveAction(Action action) {
+        activeAction = action;
+    
     }
 }
