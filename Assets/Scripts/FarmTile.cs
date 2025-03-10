@@ -2,23 +2,22 @@ using UnityEngine;
 
 public class FarmTile : MonoBehaviour
 {
-    [SerializeField] private Color baseColor, offsetColor;
+    [SerializeField] private Color baseColor;
     [SerializeField] private SpriteRenderer sRenderer;
     [SerializeField] private GameObject highlight;
-    [SerializeField] private GameObject watered;
     public void SetColor()
     {
-        sRenderer.color = offsetColor;
+        sRenderer.color = baseColor;
     }
 
     private void OnMouseEnter()
     {
-        watered.SetActive(true);
+        highlight.SetActive(true);
     }
 
     private void OnMouseExit()
     {
-        watered.SetActive(false); 
+        highlight.SetActive(false); 
     }
 
 }
