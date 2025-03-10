@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator anim;
 
     [SerializeField] private Camera mainCam;
-    
 
     // Update is called once per frame
     void Update()
@@ -28,10 +27,10 @@ public class PlayerMovement : MonoBehaviour
 
         // Actions 
         if (Input.GetMouseButtonDown(0)) {
-            Mouse mouse = Mouse.current;
-            Vector2 mousePos = mouse.position.ReadValue();
+            Vector3 mousePosition = Input.mousePosition;
+            Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-            if ((mainCam.pixelHeight / 2.0f) > mousePos.y)
+            if (transform.position.y > mouseWorldPosition.y)
             {
                 anim.SetTrigger("PlowToward");
             }
