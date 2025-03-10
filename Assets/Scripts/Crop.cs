@@ -8,14 +8,13 @@ public class Crop : MonoBehaviour
     private int waterLevel = 0;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Plant()
+    public void Plant()
     {
         spriteRenderer.sprite = sprites[waterLevel];
     }
 
     public void Water() {
-        while (waterLevel < sprites.Length - 1) {
+        if (waterLevel < sprites.Length - 1) {
             waterLevel++;
             spriteRenderer.sprite = sprites[waterLevel];
         }

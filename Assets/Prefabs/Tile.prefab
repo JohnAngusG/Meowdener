@@ -192,6 +192,7 @@ MonoBehaviour:
   baseColor: {r: 0.9058824, g: 0.8117648, b: 0.64705884, a: 1}
   sRenderer: {fileID: 6293835257253626955}
   highlight: {fileID: 1406784570770220538}
+  wheatPrefab: {fileID: 2128986563395172936, guid: 4482d12d347e504459da98ddc2c35ba9, type: 3}
 --- !u!61 &1409370797199222610
 BoxCollider2D:
   m_ObjectHideFlags: 0
