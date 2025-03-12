@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b09e4d734a9cf7488f226a2f88db67a, type: 3}
   m_Name: WheatSeed
   m_EditorClassIdentifier: 
-  name: 
-  sprite: {fileID: 0}
-  action: 0
-  isActive: 0
+  name: WheatSeed
+  sprite: {fileID: 8474670595409141939, guid: ea2534facd7fbe64fbf948d51e250e39, type: 3}
+  action: 2
+  isActive: 1

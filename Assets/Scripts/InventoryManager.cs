@@ -39,6 +39,12 @@ public class InventoryManager : MonoBehaviour
             SetHighlighting(inventoryTileTracker[2].name);
         }
 
+        if (Input.GetButtonDown("Fourth"))
+        {
+            player.SetActiveAction(inventoryTileTracker[3].action);
+            SetHighlighting(inventoryTileTracker[3].name);
+        }
+
     }
 
     private void FillInventoryTiles() {

@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerActions : MonoBehaviour
 {
     [SerializeField] private Animator anim;
-    public enum Action {Hoe, Water, PlantWheat, PlantEggplant};
+    public enum Action {Hoe, Water, PlantWheat, PlantEggplant, Null};
     public Action activeAction;
 
     // Update is called once per frame

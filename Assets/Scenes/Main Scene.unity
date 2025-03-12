@@ -3404,8 +3404,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1644236952}
   inventoryTileActions:
-  - {fileID: 11400000, guid: e31fbd71c2f95f1429fe4a28b9ebaf37, type: 2}
   - {fileID: 11400000, guid: c4e4d75002ad8684f91177530e8df6b1, type: 2}
+  - {fileID: 11400000, guid: e31fbd71c2f95f1429fe4a28b9ebaf37, type: 2}
+  - {fileID: 11400000, guid: 9b027c5b5bb218c45bc3317ee0d3e66d, type: 2}
+  - {fileID: 11400000, guid: e0b4746415b824048b0941af74c916d7, type: 2}
 --- !u!1 &1165583145
 GameObject:
   m_ObjectHideFlags: 0
@@ -3896,7 +3898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1644236951}
-  activeAction: 0
+  activeAction: 4
 --- !u!1 &1669510323
 GameObject:
   m_ObjectHideFlags: 0
