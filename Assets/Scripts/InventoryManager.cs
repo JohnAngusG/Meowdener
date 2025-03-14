@@ -6,18 +6,19 @@ public class InventoryManager : MonoBehaviour
 {
     [SerializeField] PlayerActions player;
     private Transform[] inventoryPanel;
-    [SerializeField] private InventoryTile[] inventoryTileActions;
     private Dictionary<int, InventoryTile> inventoryTileTracker;
 
 
     private void Start()
     {
+        // set up containers
         inventoryTileTracker = new Dictionary<int, InventoryTile>();
+
+        // set up actual ui panels
         inventoryPanel = new Transform[transform.GetChild(0).transform.childCount];
         for (int i = 0; i < transform.GetChild(0).transform.childCount; i++) {
             inventoryPanel[i] = transform.GetChild(0).transform.GetChild(i);
         }
-        FillInventoryTiles();
     }
 
     private void Update()
@@ -47,27 +48,31 @@ public class InventoryManager : MonoBehaviour
 
     }
 
-    private void FillInventoryTiles() {
-        for (int i = 0; i < inventoryTileActions.Length; i++) {
-            inventoryPanel[i].GetComponent<Image>().sprite = inventoryTileActions[i].sprite;
-            inventoryPanel[i].name = inventoryTileActions[i].name;
-            inventoryPanel[i].gameObject.SetActive(true);
-            inventoryTileTracker.Add(i, inventoryTileActions[i]);
-        }
+    //private void FillInventoryTiles() {
+    //    for (int i = 0; i < inventoryTileActions.Length; i++) {
+    //        inventoryPanel[i].GetComponent<Image>().sprite = inventoryTileActions[i].sprite;
+    //        inventoryPanel[i].name = inventoryTileActions[i].name;
+    //        inventoryPanel[i].gameObject.SetActive(true);
+    //        inventoryTileTracker.Add(i, inventoryTileActions[i]);
+    //    }
     
-    }
+    //}
 
     // This way i can loop through the tile when wanting to drop an item and quickly find which one is the highlighted one. 
     // Do changes to the og object affect the one in the dictionary though? reference or value?
     private void SetHighlighting(String actionName) {
-        foreach (var act in inventoryTileActions) {
-            if (act.name == actionName)
-            {
-                act.isActive = true;
-            }
-            else { 
-                act.isActive = false;
-            }
+
+        foreach (var act in inventoryTileTracker)
+        {
+                if (act.Value.name == actionName)
+                {
+                    act.Value.isActive = true;
+                }
+                else
+                {
+                    act.Value.isActive = false;
+                }
+
         }
 
         foreach (var panel in inventoryPanel)
@@ -83,5 +88,33 @@ public class InventoryManager : MonoBehaviour
         }
 
     }
+
+
+    private void Awake()
+    {
+        Messenger<string>.AddListener(GameEvent.PICKUP, OnPickup);
+    }
+    private void OnDestroy()
+    {
+        Messenger<string>.RemoveListener(GameEvent.PICKUP, OnPickup);
+    }
+
+    private void OnPickup(string objectName)
+    {
+        InventoryTile tile = Resources.Load<InventoryTile>($"{objectName}");
+        for (int i = 0; i < inventoryPanel.Length; i++)
+        {
+            print("loop: " + i);
+            if (inventoryPanel[i].name =="InventoryTile")
+            {
+                inventoryPanel[i].GetComponent<Image>().sprite = tile.sprite;
+                inventoryPanel[i].name = tile.name;
+                inventoryPanel[i].gameObject.SetActive(true);
+                inventoryTileTracker.Add(i, tile);
+                break;
+            }
+        }
+    }
+
 
 }
