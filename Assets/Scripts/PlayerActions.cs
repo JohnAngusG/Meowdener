@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerActions : MonoBehaviour
 {
     [SerializeField] private Animator anim;
-    public enum Action {Hoe, Water, PlantWheat, PlantEggplant, Null};
+    public enum Action {Hoe, Water, PlantWheat, PlantEggplant, Null, Axe};
     public Action activeAction;
 
     // Update is called once per frame
@@ -21,7 +21,6 @@ public class PlayerActions : MonoBehaviour
            
             // Hoeing
             if (activeAction == Action.Hoe) {
-                print("trying to hoe");
                 if (transform.position.y > mouseWorldPosition.y)
                 {
                     anim.SetTrigger("PlowToward");

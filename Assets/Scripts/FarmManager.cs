@@ -4,6 +4,8 @@ public class FarmManager : MonoBehaviour
 {
     [SerializeField] private int width, height;
     [SerializeField] private FarmTile tile_prefab;
+    [SerializeField] private GameObject wheatSeedPrefab;
+    [SerializeField] private GameObject eggplantSeedPrefab;
 
 
 
@@ -22,4 +24,36 @@ public class FarmManager : MonoBehaviour
         }
 
     }
+
+    private void Awake()
+    {
+        Messenger<FarmTile>.AddListener(GameEvent.SPAWN_SEED, OnSpawnSeed);
+    }
+    private void OnDestroy()
+    {
+        Messenger<FarmTile>.RemoveListener(GameEvent.SPAWN_SEED, OnSpawnSeed);
+    }
+
+    private void OnSpawnSeed(FarmTile tile) {
+        Crop childCrop = tile.GetComponentInChildren<Crop>();
+        Vector3 spawnPoint = childCrop.transform.position;
+        
+        if (childCrop.gameObject.name == "Wheat")
+        {
+            GameObject wheatSeed = Instantiate(wheatSeedPrefab);
+            wheatSeed.name = "WheatSeed";
+        }
+        else {
+  
+            GameObject eggPlantSeed = Instantiate(eggplantSeedPrefab);
+            eggPlantSeed.name = "EggplantSeed";
+            
+        }
+        Destroy(childCrop.gameObject);
+
+    }
+
+    
+
+
 }

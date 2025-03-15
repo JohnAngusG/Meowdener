@@ -90,6 +90,7 @@ public class InventoryManager : MonoBehaviour
     private void OnDestroy()
     {
         Messenger<string>.RemoveListener(GameEvent.PICKUP, OnPickup);
+        Messenger<PlayerActions.Action>.RemoveListener(GameEvent.USE_ITEM, OnUseItem);
     }
 
     private void OnPickup(string objectName)
@@ -97,7 +98,7 @@ public class InventoryManager : MonoBehaviour
         InventoryTile tile = Resources.Load<InventoryTile>($"{objectName}");
         tile.count = 1;
         if (inventoryTileTracker.ContainsValue(tile)){
-            if (tile.name != "Hoe" && tile.name != "Water")
+            if (tile.name != "Hoe" && tile.name != "Water" && tile.name != "Axe")
             {
                 foreach (var act in inventoryTileTracker) {
                     if (act.Value == tile) {
@@ -117,12 +118,14 @@ public class InventoryManager : MonoBehaviour
                     inventoryPanel[i].GetComponent<Image>().sprite = tile.sprite;
                     inventoryPanel[i].name = tile.name;
                     inventoryPanel[i].gameObject.SetActive(true);
+                    if (inventoryPanel[i].name == "Hoe" || inventoryPanel[i].name == "Water" || inventoryPanel[i].name == "Axe")
+                    {
+                        inventoryPanel[i].GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+                    }
                     inventoryTileTracker.Add(i, tile);
                     break;
                 }
-                if (inventoryPanel[i].name == "Hoe" || inventoryPanel[i].name == "Water") {
-                    inventoryPanel[i].GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
-                }
+                
             }
         }
     }
@@ -134,11 +137,11 @@ public class InventoryManager : MonoBehaviour
             if (kvp.Value.action == action)
             {
                 // Handle item usage
-                if (action != PlayerActions.Action.Water && action != PlayerActions.Action.Hoe)
+                if (action != PlayerActions.Action.Water && action != PlayerActions.Action.Hoe && action != PlayerActions.Action.Axe)
                 {
                     kvp.Value.count--;
-                    inventoryPanel[kvp.Key].GetChild(1).GetComponent<TextMeshProUGUI>().text = "" + kvp.Value.count;
                 }
+
                 if (kvp.Value.count == 0)
                 {
                     inventoryPanel[kvp.Key].name = "InventoryTile";
@@ -146,6 +149,9 @@ public class InventoryManager : MonoBehaviour
                     inventoryTileTracker.Remove(kvp.Key);
                     player.SetActiveAction(PlayerActions.Action.Null);
                     break;
+                }
+                else {
+                    inventoryPanel[kvp.Key].GetChild(1).GetComponent<TextMeshProUGUI>().text = "" + kvp.Value.count;
                 }
             }
         }

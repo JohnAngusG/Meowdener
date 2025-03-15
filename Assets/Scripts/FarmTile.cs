@@ -23,16 +23,18 @@ public class FarmTile : MonoBehaviour
     private void OnMouseDown()
     {
         Crop childCrop = GetComponentInChildren<Crop>();
-
+        // TODO: This isnt talking to the inventory manager to confirm that the crop was planted successfully.
         if (childCrop == null) {
             Crop newCrop;
             if (playerAction.activeAction == PlayerActions.Action.PlantWheat)
             {
                 newCrop = Instantiate(wheatPrefab, this.transform, worldPositionStays: false);
+                newCrop.gameObject.name = "Wheat";
             }
             else if (playerAction.activeAction == PlayerActions.Action.PlantEggplant)
             {
                 newCrop = Instantiate(eggplantPrefab, this.transform, worldPositionStays: false);
+                newCrop.gameObject.name = "Eggplant";
             }
             else {
                 return;
@@ -44,9 +46,13 @@ public class FarmTile : MonoBehaviour
         else
         {
             if (playerAction.activeAction == PlayerActions.Action.Water) {
-                print("Watering crop");
                 childCrop.Water();
             }
+
+            if (playerAction.activeAction == PlayerActions.Action.Axe && childCrop.GetWaterLevel() == 3) {
+                Messenger<FarmTile>.Broadcast(GameEvent.SPAWN_SEED, this);
+            }
+
         }
     }
 

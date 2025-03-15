@@ -7,7 +7,6 @@ public class Crop : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     private int waterLevel = 0;
 
-
     public void Plant()
     {
         spriteRenderer.sprite = sprites[waterLevel];
@@ -18,5 +17,9 @@ public class Crop : MonoBehaviour
             waterLevel++;
             spriteRenderer.sprite = sprites[waterLevel];
         }
+    }
+
+    public int GetWaterLevel() {
+        return waterLevel;    
     }
 }
