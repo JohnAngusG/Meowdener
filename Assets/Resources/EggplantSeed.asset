@@ -16,3 +16,4 @@ MonoBehaviour:
   sprite: {fileID: 2018227706277626003, guid: ea2534facd7fbe64fbf948d51e250e39, type: 3}
   action: 3
   isActive: 0
+  count: 1

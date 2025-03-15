@@ -11,7 +11,7 @@ public class Pickup : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Player") {
-           Messenger<string>.Broadcast(GameEvent.PICKUP, gameObject.name);
+            Messenger<string>.Broadcast(GameEvent.PICKUP, gameObject.name);
             Destroy(gameObject);
         }
     }

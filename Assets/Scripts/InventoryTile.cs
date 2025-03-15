@@ -8,6 +8,6 @@ public class InventoryTile : ScriptableObject
     public Sprite sprite;
     public PlayerActions.Action action;
     public bool isActive;
-
+    public int count;
 
 }

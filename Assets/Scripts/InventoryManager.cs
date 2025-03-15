@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 public class InventoryManager : MonoBehaviour
 {
@@ -38,6 +40,7 @@ public class InventoryManager : MonoBehaviour
         {
             player.SetActiveAction(inventoryTileTracker[2].action);
             SetHighlighting(inventoryTileTracker[2].name);
+
         }
 
         if (Input.GetButtonDown("Fourth"))
@@ -48,18 +51,7 @@ public class InventoryManager : MonoBehaviour
 
     }
 
-    //private void FillInventoryTiles() {
-    //    for (int i = 0; i < inventoryTileActions.Length; i++) {
-    //        inventoryPanel[i].GetComponent<Image>().sprite = inventoryTileActions[i].sprite;
-    //        inventoryPanel[i].name = inventoryTileActions[i].name;
-    //        inventoryPanel[i].gameObject.SetActive(true);
-    //        inventoryTileTracker.Add(i, inventoryTileActions[i]);
-    //    }
-    
-    //}
-
     // This way i can loop through the tile when wanting to drop an item and quickly find which one is the highlighted one. 
-    // Do changes to the og object affect the one in the dictionary though? reference or value?
     private void SetHighlighting(String actionName) {
 
         foreach (var act in inventoryTileTracker)
@@ -93,6 +85,7 @@ public class InventoryManager : MonoBehaviour
     private void Awake()
     {
         Messenger<string>.AddListener(GameEvent.PICKUP, OnPickup);
+        Messenger<PlayerActions.Action>.AddListener(GameEvent.USE_ITEM, OnUseItem);
     }
     private void OnDestroy()
     {
@@ -102,16 +95,58 @@ public class InventoryManager : MonoBehaviour
     private void OnPickup(string objectName)
     {
         InventoryTile tile = Resources.Load<InventoryTile>($"{objectName}");
-        for (int i = 0; i < inventoryPanel.Length; i++)
-        {
-            print("loop: " + i);
-            if (inventoryPanel[i].name =="InventoryTile")
+        tile.count = 1;
+        if (inventoryTileTracker.ContainsValue(tile)){
+            if (tile.name != "Hoe" && tile.name != "Water")
             {
-                inventoryPanel[i].GetComponent<Image>().sprite = tile.sprite;
-                inventoryPanel[i].name = tile.name;
-                inventoryPanel[i].gameObject.SetActive(true);
-                inventoryTileTracker.Add(i, tile);
-                break;
+                foreach (var act in inventoryTileTracker) {
+                    if (act.Value == tile) {
+                        act.Value.count++;
+                        inventoryPanel[act.Key].GetChild(1).GetComponent<TextMeshProUGUI>().text = "" + tile.count;
+                        break;
+                    }
+                }
+            }
+        }
+        else {
+            for (int i = 0; i < inventoryPanel.Length; i++)
+            {
+                if (inventoryPanel[i].name == "InventoryTile")
+                {
+                    //print($"putting {tile.name} @ {i}");
+                    inventoryPanel[i].GetComponent<Image>().sprite = tile.sprite;
+                    inventoryPanel[i].name = tile.name;
+                    inventoryPanel[i].gameObject.SetActive(true);
+                    inventoryTileTracker.Add(i, tile);
+                    break;
+                }
+                if (inventoryPanel[i].name == "Hoe" || inventoryPanel[i].name == "Water") {
+                    inventoryPanel[i].GetChild(1).GetComponent<TextMeshProUGUI>().text = "";
+                }
+            }
+        }
+    }
+
+    private void OnUseItem(PlayerActions.Action action)
+    {
+        foreach (var kvp in inventoryTileTracker)
+        {
+            if (kvp.Value.action == action)
+            {
+                // Handle item usage
+                if (action != PlayerActions.Action.Water && action != PlayerActions.Action.Hoe)
+                {
+                    kvp.Value.count--;
+                    inventoryPanel[kvp.Key].GetChild(1).GetComponent<TextMeshProUGUI>().text = "" + kvp.Value.count;
+                }
+                if (kvp.Value.count == 0)
+                {
+                    inventoryPanel[kvp.Key].name = "InventoryTile";
+                    inventoryPanel[kvp.Key].gameObject.SetActive(false);
+                    inventoryTileTracker.Remove(kvp.Key);
+                    player.SetActiveAction(PlayerActions.Action.Null);
+                    break;
+                }
             }
         }
     }
