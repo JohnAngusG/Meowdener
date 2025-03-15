@@ -40,12 +40,12 @@ public class FarmManager : MonoBehaviour
         
         if (childCrop.gameObject.name == "Wheat")
         {
-            GameObject wheatSeed = Instantiate(wheatSeedPrefab);
+            GameObject wheatSeed = Instantiate(wheatSeedPrefab, childCrop.gameObject.transform.position, Quaternion.identity);
             wheatSeed.name = "WheatSeed";
         }
         else {
   
-            GameObject eggPlantSeed = Instantiate(eggplantSeedPrefab);
+            GameObject eggPlantSeed = Instantiate(eggplantSeedPrefab, childCrop.gameObject.transform.position, Quaternion.identity);
             eggPlantSeed.name = "EggplantSeed";
             
         }
