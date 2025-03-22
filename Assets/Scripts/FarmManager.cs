@@ -6,7 +6,8 @@ public class FarmManager : MonoBehaviour
     [SerializeField] private FarmTile tile_prefab;
     [SerializeField] private GameObject wheatSeedPrefab;
     [SerializeField] private GameObject eggplantSeedPrefab;
-
+    [SerializeField] private GameObject wheatHarvestedPrefab;
+    [SerializeField] private GameObject eggplantHarvestedPrefab;
 
 
     private void Start()
@@ -53,11 +54,28 @@ public class FarmManager : MonoBehaviour
             eggPlantSeed.name = "EggplantSeed";
             
         }
+        SpawnHarvest(tile);
         Destroy(childCrop.gameObject);
 
     }
 
-    
+    private void SpawnHarvest(FarmTile tile) {
+        Crop childCrop = tile.GetComponentInChildren<Crop>();
+        Vector3 spawnPoint = childCrop.transform.position;
 
-
+        if (childCrop.gameObject.name == "Wheat")
+        {
+            GameObject wheatHarvested = Instantiate(wheatHarvestedPrefab, childCrop.gameObject.transform.position, Quaternion.identity);
+            Vector3 vec = new Vector3(spawnPoint.x, spawnPoint.y, -1);
+            wheatHarvested.transform.position = vec;
+            wheatHarvested.name = "WheatHarvested";
+        }
+        else
+        {
+            GameObject eggplantHarvested = Instantiate(eggplantHarvestedPrefab, childCrop.gameObject.transform.position, Quaternion.identity);
+            Vector3 vec = new Vector3(spawnPoint.x, spawnPoint.y, -1);
+            eggplantHarvested.transform.position = vec;
+            eggplantHarvested.name = "EggplantHarvested";
+        }
+    }
 }
