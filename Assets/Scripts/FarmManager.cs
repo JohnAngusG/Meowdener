@@ -41,11 +41,15 @@ public class FarmManager : MonoBehaviour
         if (childCrop.gameObject.name == "Wheat")
         {
             GameObject wheatSeed = Instantiate(wheatSeedPrefab, childCrop.gameObject.transform.position, Quaternion.identity);
+            Vector3 vec = new Vector3(spawnPoint.x, spawnPoint.y, -1);
+            wheatSeed.transform.position = vec;
             wheatSeed.name = "WheatSeed";
         }
         else {
   
             GameObject eggPlantSeed = Instantiate(eggplantSeedPrefab, childCrop.gameObject.transform.position, Quaternion.identity);
+            Vector3 vec = new Vector3(spawnPoint.x, spawnPoint.y, -1);
+            eggplantSeedPrefab.transform.position = vec;
             eggPlantSeed.name = "EggplantSeed";
             
         }

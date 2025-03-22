@@ -49,6 +49,24 @@ public class InventoryManager : MonoBehaviour
             SetHighlighting(inventoryTileTracker[3].name);
         }
 
+        if (Input.GetButtonDown("Fifth"))
+        {
+            player.SetActiveAction(inventoryTileTracker[4].action);
+            SetHighlighting(inventoryTileTracker[4].name);
+        }
+
+        if (Input.GetButtonDown("Sixth"))
+        {
+            player.SetActiveAction(inventoryTileTracker[5].action);
+            SetHighlighting(inventoryTileTracker[5].name);
+        }
+
+        if (Input.GetButtonDown("Seventh"))
+        {
+            player.SetActiveAction(inventoryTileTracker[6].action);
+            SetHighlighting(inventoryTileTracker[6].name);
+        }
+
     }
 
     // This way i can loop through the tile when wanting to drop an item and quickly find which one is the highlighted one. 
