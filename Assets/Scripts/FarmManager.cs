@@ -76,6 +76,13 @@ public class FarmManager : MonoBehaviour
             Vector3 vec = new Vector3(spawnPoint.x, spawnPoint.y, -1);
             eggplantHarvested.transform.position = vec;
             eggplantHarvested.name = "EggplantHarvested";
+     
         }
     }
+
+
+   
+
+
+
 }

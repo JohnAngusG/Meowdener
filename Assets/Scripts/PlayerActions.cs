@@ -11,11 +11,7 @@ public class PlayerActions : MonoBehaviour
     {
 
         if (Input.GetMouseButtonDown(0))
-        {
-            if (activeAction != PlayerActions.Action.Null) {
-                Messenger<PlayerActions.Action>.Broadcast(GameEvent.USE_ITEM, activeAction);
-            }
-       
+        {       
             Vector3 mousePosition = Input.mousePosition;
             Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
            
@@ -38,4 +34,25 @@ public class PlayerActions : MonoBehaviour
         activeAction = action;
     
     }
+
+    private void OnSellCrop()
+    {
+        if (activeAction == Action.SellWheat || activeAction == Action.SellEggplant) {
+            Messenger<PlayerActions.Action>.Broadcast(GameEvent.USE_ITEM, activeAction);
+            Messenger.Broadcast(GameEvent.UPDATE_MONEY);
+
+        }
+
+    }
+
+    private void Awake()
+    {
+        Messenger.AddListener(GameEvent.SELL_CROP, OnSellCrop);
+    }
+    private void OnDestroy()
+    {
+        Messenger.RemoveListener(GameEvent.SELL_CROP, OnSellCrop);
+    }
+
+
 }

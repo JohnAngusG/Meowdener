@@ -99,12 +99,12 @@ public class InventoryManager : MonoBehaviour
 
     }
 
-
     private void Awake()
     {
         Messenger<string>.AddListener(GameEvent.PICKUP, OnPickup);
         Messenger<PlayerActions.Action>.AddListener(GameEvent.USE_ITEM, OnUseItem);
     }
+
     private void OnDestroy()
     {
         Messenger<string>.RemoveListener(GameEvent.PICKUP, OnPickup);
@@ -147,6 +147,9 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
+
+
+
 
     private void OnUseItem(PlayerActions.Action action)
     {
