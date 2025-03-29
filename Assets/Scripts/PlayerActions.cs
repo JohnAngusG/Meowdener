@@ -6,7 +6,6 @@ public class PlayerActions : MonoBehaviour
     public enum Action {Hoe, Water, PlantWheat, PlantEggplant, Null, Axe, SellWheat, SellEggplant};
     public Action activeAction;
 
-    // Update is called once per frame
     void Update()
     {
 

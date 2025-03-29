@@ -23,16 +23,17 @@ public class FarmTile : MonoBehaviour
     private void OnMouseDown()
     {
         Crop childCrop = GetComponentInChildren<Crop>();
-        // TODO: This isnt talking to the inventory manager to confirm that the crop was planted successfully.
         if (childCrop == null) {
             Crop newCrop;
             if (playerAction.activeAction == PlayerActions.Action.PlantWheat)
             {
+                Messenger<PlayerActions.Action>.Broadcast(GameEvent.USE_ITEM, playerAction.activeAction);
                 newCrop = Instantiate(wheatPrefab, this.transform, worldPositionStays: false);
                 newCrop.gameObject.name = "Wheat";
             }
             else if (playerAction.activeAction == PlayerActions.Action.PlantEggplant)
             {
+                Messenger<PlayerActions.Action>.Broadcast(GameEvent.USE_ITEM, playerAction.activeAction);
                 newCrop = Instantiate(eggplantPrefab, this.transform, worldPositionStays: false);
                 newCrop.gameObject.name = "Eggplant";
             }
