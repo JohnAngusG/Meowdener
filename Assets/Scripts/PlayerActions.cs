@@ -3,8 +3,17 @@ using UnityEngine;
 public class PlayerActions : MonoBehaviour
 {
     [SerializeField] private Animator anim;
+    [SerializeField] private AudioClip sellSound;
+    private AudioSource audioSrc;
+
     public enum Action {Hoe, Water, PlantWheat, PlantEggplant, Null, Axe, SellWheat, SellEggplant};
     public Action activeAction;
+
+    private void Start()
+    {
+        audioSrc = GetComponent<AudioSource>();
+    }
+
 
     void Update()
     {
@@ -38,6 +47,7 @@ public class PlayerActions : MonoBehaviour
     {
         if (activeAction == Action.SellWheat || activeAction == Action.SellEggplant) {
             Messenger<PlayerActions.Action>.Broadcast(GameEvent.USE_ITEM, activeAction);
+            audioSrc.PlayOneShot(sellSound);
             Messenger.Broadcast(GameEvent.UPDATE_MONEY);
 
         }
