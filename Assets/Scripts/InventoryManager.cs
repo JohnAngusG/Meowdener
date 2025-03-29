@@ -119,9 +119,10 @@ public class InventoryManager : MonoBehaviour
             if (tile.name != "Hoe" && tile.name != "Water" && tile.name != "Axe")
             {
                 foreach (var act in inventoryTileTracker) {
-                    if (act.Value == tile) {
+                    if (act.Value.name == tile.name) {
                         act.Value.count++;
-                        inventoryPanel[act.Key].GetChild(1).GetComponent<TextMeshProUGUI>().text = "" + tile.count;
+                        print("" + act.Value.name + ": " + act.Value.count);
+                        inventoryPanel[act.Key].GetChild(1).GetComponent<TextMeshProUGUI>().text = "" + act.Value.count;
                         break;
                     }
                 }
