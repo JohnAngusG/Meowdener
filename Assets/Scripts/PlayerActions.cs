@@ -4,6 +4,7 @@ public class PlayerActions : MonoBehaviour
 {
     [SerializeField] private Animator anim;
     [SerializeField] private AudioClip sellSound;
+    [SerializeField] Camera mainCam;
     private AudioSource audioSrc;
 
     public enum Action {Hoe, Water, PlantWheat, PlantEggplant, Null, Axe, SellWheat, SellEggplant};
@@ -21,20 +22,22 @@ public class PlayerActions : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {       
             Vector3 mousePosition = Input.mousePosition;
-            Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-           
-            // Hoeing
-            if (activeAction == Action.Hoe) {
-                if (transform.position.y > mouseWorldPosition.y)
-                {
-                    anim.SetTrigger("PlowToward");
-                }
-                else
-                {
-                    anim.SetTrigger("PlowAway");
-                }
+            Vector3 mouseViewPortPosition = mainCam.ScreenToViewportPoint(mousePosition);
+            float relativeX = mouseViewPortPosition.x - 0.5f;
+            float relativeY = mouseViewPortPosition.y - 0.5f;
 
+
+            anim.SetFloat("MouseX", relativeX);
+            anim.SetFloat("MouseY", relativeY);
+
+            if (activeAction == Action.Water) {
+                anim.SetTrigger("Water");
             }
+
+            if (activeAction == Action.Axe) {
+                anim.SetTrigger("Axe");
+            }
+
             
         }
     }
