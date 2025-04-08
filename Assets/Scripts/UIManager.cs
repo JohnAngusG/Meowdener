@@ -47,5 +47,10 @@ public class UIManager : MonoBehaviour
     
     }
 
+    public void OnQuitButton() { 
+        Application.Quit();
+    
+    }
+
 
 }
