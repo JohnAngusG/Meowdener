@@ -114,7 +114,6 @@ public class InventoryManager : MonoBehaviour
     private void OnPickup(string objectName)
     {
         InventoryTile tile = Resources.Load<InventoryTile>($"{objectName}");
-        tile.count = 1;
         if (inventoryTileTracker.ContainsValue(tile)){
             if (tile.name != "Hoe" && tile.name != "Water" && tile.name != "Axe")
             {
@@ -129,6 +128,7 @@ public class InventoryManager : MonoBehaviour
             }
         }
         else {
+            tile.count = 1;
             for (int i = 0; i < inventoryPanel.Length; i++)
             {
                 if (inventoryPanel[i].name == "InventoryTile")
@@ -178,6 +178,5 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
-
 
 }

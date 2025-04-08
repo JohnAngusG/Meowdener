@@ -22,4 +22,6 @@ public class Crop : MonoBehaviour
     public int GetWaterLevel() {
         return waterLevel;    
     }
+
+
 }
