@@ -375,7 +375,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 78465518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 168286701}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
+        m_MethodName: OnMuteButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &78465518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,6 +437,7 @@ GameObject:
   - component: {fileID: 168286698}
   - component: {fileID: 168286700}
   - component: {fileID: 168286699}
+  - component: {fileID: 168286701}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -490,11 +503,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168286697}
   m_CullTransparentMesh: 1
---- !u!4 &412310129 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-  m_PrefabInstance: {fileID: 1188054243}
+--- !u!114 &168286701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168286697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd30a096c75ffd844a076e71002095ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &484944642
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +871,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 531505781}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 168286701}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
+        m_MethodName: OnQuitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &531505781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8841,75 +8873,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7315967538722483393, guid: 1a7c8f3db4919394aa28118e8d15d7d3, type: 3}
   m_PrefabInstance: {fileID: 1680138316}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1188054243
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1581359687}
-    m_Modifications:
-    - target: {fileID: 2034961256782775438, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 5827638716017627413, guid: 885655fa8397dd6449a6746e756d4e7a, type: 3}
-    - target: {fileID: 3738420209310394036, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_Name
-      value: Hoe
-      objectReference: {fileID: 0}
-    - target: {fileID: 5317653710705797219, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5317653710705797219, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.0666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.2551
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.265882
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.06994726
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7588677686112386080, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 69c14af088e2d504b9e0d257a16a684f, type: 3}
 --- !u!1001 &1234552203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9743,7 +9706,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1347935595}
-  - {fileID: 412310129}
   - {fileID: 1591872564}
   - {fileID: 1179947986}
   - {fileID: 676075524}
@@ -9896,8 +9858,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1644236951}
-  sellSound: {fileID: 8300000, guid: d608ac69c55f82a4db2c039ebe110e61, type: 3}
   mainCam: {fileID: 519420031}
+  sellSound: {fileID: 8300000, guid: d608ac69c55f82a4db2c039ebe110e61, type: 3}
+  waterSound: {fileID: 8300000, guid: 5f11271ae2e467c43b78327b428774a8, type: 3}
+  axeSound: {fileID: 8300000, guid: f5a322c2f80714746ab5f9cde8b1b267, type: 3}
   activeAction: 4
 --- !u!61 &1644236953
 BoxCollider2D:
@@ -28551,8 +28515,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1009220037}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+      - m_Target: {fileID: 168286701}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
         m_MethodName: OnResetButton
         m_Mode: 1
         m_Arguments:

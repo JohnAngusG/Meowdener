@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 {
 
     [SerializeField] TextMeshProUGUI moneyText;
+    private int score = 0;
     [SerializeField] GameObject settingsPanel;
     bool showSettings = false;
 
@@ -27,7 +28,8 @@ public class UIManager : MonoBehaviour
     }
 
     void OnUpdateScore() {
-        moneyText.text = (Int32.Parse(moneyText.text) + 10).ToString();
+        score += 10;
+        moneyText.text = score.ToString();
     }
 
 
@@ -40,17 +42,8 @@ public class UIManager : MonoBehaviour
         
         }
     }
-
-    public void OnResetButton() {
-        string currScene = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currScene);
     
-    }
 
-    public void OnQuitButton() { 
-        Application.Quit();
-    
-    }
 
 
 }

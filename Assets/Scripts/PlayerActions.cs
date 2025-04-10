@@ -3,18 +3,17 @@ using UnityEngine;
 public class PlayerActions : MonoBehaviour
 {
     [SerializeField] private Animator anim;
-    [SerializeField] private AudioClip sellSound;
     [SerializeField] Camera mainCam;
-    private AudioSource audioSrc;
+
+    // Audio
+    [SerializeField] private AudioClip sellSound;
+    [SerializeField] private AudioClip waterSound;
+    [SerializeField] private AudioClip axeSound;
+
+
 
     public enum Action {Hoe, Water, PlantWheat, PlantEggplant, Null, Axe, SellWheat, SellEggplant};
     public Action activeAction;
-
-    private void Start()
-    {
-        audioSrc = GetComponent<AudioSource>();
-    }
-
 
     void Update()
     {
@@ -32,10 +31,12 @@ public class PlayerActions : MonoBehaviour
 
             if (activeAction == Action.Water) {
                 anim.SetTrigger("Water");
+                SoundManager.Instance.PlaySfx(waterSound);
             }
 
             if (activeAction == Action.Axe) {
                 anim.SetTrigger("Axe");
+                SoundManager.Instance.PlaySfx(axeSound);
             }
 
             

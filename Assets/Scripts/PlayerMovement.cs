@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("MoveY", vert);
 
         Vector2 movement = new Vector2(horiz, vert);
+        movement = Vector2.ClampMagnitude(movement, 1.0f);
+
+
         Vector2 position = (Vector2)transform.position + movement * speed * Time.deltaTime;
         anim.SetFloat("Speed", movement.magnitude);
         transform.position = position;
