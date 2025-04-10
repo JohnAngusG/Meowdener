@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxSource: {fileID: 576335321}
-  musicSource: {fileID: 0}
+  musicSource: {fileID: 1986101019}
 --- !u!4 &786698100
 Transform:
   m_ObjectHideFlags: 0

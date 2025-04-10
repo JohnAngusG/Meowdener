@@ -31,12 +31,14 @@ public class FarmTile : MonoBehaviour
                 Messenger<PlayerActions.Action>.Broadcast(GameEvent.USE_ITEM, playerAction.activeAction);
                 newCrop = Instantiate(wheatPrefab, this.transform, worldPositionStays: false);
                 newCrop.gameObject.name = "Wheat";
+                SoundManager.Instance.PlaySfx(plantingSound);
             }
             else if (playerAction.activeAction == PlayerActions.Action.PlantEggplant)
             {
                 Messenger<PlayerActions.Action>.Broadcast(GameEvent.USE_ITEM, playerAction.activeAction);
                 newCrop = Instantiate(eggplantPrefab, this.transform, worldPositionStays: false);
                 newCrop.gameObject.name = "Eggplant";
+                SoundManager.Instance.PlaySfx(plantingSound);
             }
             else {
                 return;

@@ -194,6 +194,7 @@ MonoBehaviour:
   highlight: {fileID: 1406784570770220538}
   wheatPrefab: {fileID: 2128986563395172936, guid: 4482d12d347e504459da98ddc2c35ba9, type: 3}
   eggplantPrefab: {fileID: 4173527481306668700, guid: a398ad34c38f4ea47b21e836709b8403, type: 3}
+  plantingSound: {fileID: 8300000, guid: 259b88987ac58be48a36a1892bd42b09, type: 3}
   playerAction: {fileID: 0}
 --- !u!61 &1409370797199222610
 BoxCollider2D:
