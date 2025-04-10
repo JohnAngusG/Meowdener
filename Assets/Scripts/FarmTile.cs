@@ -8,6 +8,7 @@ public class FarmTile : MonoBehaviour
 
     [SerializeField] private Crop wheatPrefab;
     [SerializeField] private Crop eggplantPrefab;
+    [SerializeField] private AudioClip plantingSound;
     public PlayerActions playerAction;
 
     public void SetColor()

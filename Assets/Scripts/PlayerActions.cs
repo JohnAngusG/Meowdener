@@ -50,15 +50,12 @@ public class PlayerActions : MonoBehaviour
     {
         if (activeAction == Action.SellWheat || activeAction == Action.SellEggplant) {
             Messenger<PlayerActions.Action>.Broadcast(GameEvent.USE_ITEM, activeAction);
-            audioSrc.PlayOneShot(sellSound);
+            SoundManager.Instance.PlaySfx(sellSound);
             Messenger.Broadcast(GameEvent.UPDATE_MONEY);
 
         }
 
     }
-
-
-
 
     private void Awake()
     {

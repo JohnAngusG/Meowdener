@@ -9,7 +9,6 @@ public class FarmManager : MonoBehaviour
     [SerializeField] private GameObject wheatHarvestedPrefab;
     [SerializeField] private GameObject eggplantHarvestedPrefab;
 
-
     private void Start()
     {
         GenerateGrid();
