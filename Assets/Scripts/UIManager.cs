@@ -30,6 +30,10 @@ public class UIManager : MonoBehaviour
     void OnUpdateScore() {
         score += 10;
         moneyText.text = score.ToString();
+        
+        if (score >= 100) {
+            Messenger.Broadcast(GameEvent.GAME_OVER);
+        }
     }
 
 

@@ -8,4 +8,5 @@ public static class GameEvent
     public const string SPAWN_HARVEST = "SPAWN_HARVEST";
     public const string SELL_CROP = "SELL_CROP";
     public const string UPDATE_MONEY = "UPDATE_MONEY";
+    public const string GAME_OVER = "GAME_OVER";
 }
