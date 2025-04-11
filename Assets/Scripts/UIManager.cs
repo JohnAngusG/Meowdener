@@ -3,19 +3,23 @@ using TMPro;
 using System;
 using System.Xml.Serialization;
 using UnityEngine.SceneManagement;
+using System.Collections;
 public class UIManager : MonoBehaviour
 {
 
-    [SerializeField] TextMeshProUGUI moneyText;
+    [SerializeField] private TextMeshProUGUI moneyText;
     private int score = 0;
     [SerializeField] GameObject settingsPanel;
     bool showSettings = false;
+
+    [SerializeField] private GameObject tutorial;
 
 
     private void Start()
     {
         settingsPanel.SetActive(showSettings);
         Time.timeScale = 1f;
+        StartCoroutine(DisableTutorial());
     }
 
     private void Awake()
@@ -46,8 +50,11 @@ public class UIManager : MonoBehaviour
         
         }
     }
-    
 
+    private IEnumerator DisableTutorial() {
+        yield return new WaitForSeconds(3);
+        tutorial.SetActive(false);
+    }
 
 
 }
