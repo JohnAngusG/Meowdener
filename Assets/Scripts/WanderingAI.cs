@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class WanderingAI : MonoBehaviour
 {
-
+    [SerializeField] private LayerMask background;
     private bool facingRight = true;
     private float latestDirectionChangeTime;
     private readonly float directionChangeTime = 3f;
@@ -27,8 +27,11 @@ public class WanderingAI : MonoBehaviour
 
     void Update()
     {
+        int dirVal = facingRight ? 1 : -1;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, (Vector2.right * dirVal), 0.8f, background.value);
+
         //if the changeTime was reached, calculate a new movement vector
-        if (Time.time - latestDirectionChangeTime > directionChangeTime)
+        if (Time.time - latestDirectionChangeTime > directionChangeTime || hit)
         {
             latestDirectionChangeTime = Time.time;
             calcuateNewMovementVector();
@@ -37,8 +40,6 @@ public class WanderingAI : MonoBehaviour
         if ((!facingRight && movementDirection.x > 0.01f) || (facingRight && movementDirection.x < -0.01f)) {
             Flip();
         }
-
-
 
         //move enemy: 
         transform.position = new Vector2(transform.position.x + (movementPerSecond.x * Time.deltaTime),
